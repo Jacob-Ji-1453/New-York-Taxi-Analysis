@@ -19,5 +19,5 @@
 ## Consolidations:
 1. Do pairwise correlation before selecting attributes, avoiding effect of correlations
 2. Apply grid search or randomized search to find out best hyperparameter sets, boosting accuracy.
-3. Though modeling is time-consuming with all attributes, feature selection (i.e. select k best) could also be applied to boost time effectiveness. 
+3. Since modeling is time-consuming with all attributes, feature selection (i.e. select k best) could also be applied to boost time effectiveness. 
 4. Two raw models both failed to predict TP in confusion matrices, which is still a unknown answer.
