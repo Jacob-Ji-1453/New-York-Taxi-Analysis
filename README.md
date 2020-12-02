@@ -1,5 +1,6 @@
 # New-York-Taxi-Analysis
-#### Datasets are yellow and green taxis records from January to June of 2020, derived from NYC Taxi & Limousine Commission. 
+Datasets are yellow and green taxis records from January to June of 2020, derived from NYC Taxi & Limousine Commission. 
+
 (Link: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
 ## Tasks: 
