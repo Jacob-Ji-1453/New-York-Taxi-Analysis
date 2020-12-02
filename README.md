@@ -13,7 +13,7 @@
 
 ### Machine Learning Modeling (Binary classification: is it a tip-given ride?)
 1. Preprocess: instances in 0.95 quantile are remained (remove outliers). Trip distance, passenger number, subcharges, pickup and dropoff locations are selected as our attribtues, and "is tipped" is the label. 
-2. Modeling: 2 classification methods are implemented, logistic regression (linear model) and random forest (non-linear model). 
+2. Modeling: 2 classification models are implemented, logistic regression (linear model) and random forest (non-linear model). 
 3. Evaluation: regular evaluation applied (i.e. normalized confusion matrix, ROC-AUC curve and learning curve), where the conclusion is that random forest is outpreformed than logistic regression. 
 
 ## Consolidations:
