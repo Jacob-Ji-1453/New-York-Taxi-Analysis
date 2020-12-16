@@ -12,13 +12,13 @@ Datasets are yellow and green taxis records from January to June of 2020, derive
     2. Relationship between payment type and dropoff location: people living in the outer borough prefer cash payment, while people living in Mahatten prefer card payment. 
     3. Relationship between tip fraction (ratio of tips to total amount) and dropoff location: no obvoius distribution found. In other word, passengers are likely to pay a fixed-rate tips. 
 
-### Machine Learning Modeling (Binary classification: is it a tip-given ride?)
-1. Preprocess: instances in 0.95 quantile are remained (remove outliers). Trip distance, passenger number, subcharges, pickup and dropoff locations are selected as our attribtues, and "is tipped" is the label. 
+### Machine Learning Modeling (Binary Classification: is it a tip-given ride?)
+1. Preprocess: numerical features in 0.95 quantile are remained (remove outliers). Trip distance, passenger number, subcharges, pickup and dropoff locations are selected as our attribtues, and "is tipped" is the label. 
 2. Modeling: 2 classification models are implemented, logistic regression (linear model) and random forest (non-linear model). 
 3. Evaluation: regular evaluation applied (i.e. normalized confusion matrix, ROC-AUC curve and learning curve), where the conclusion is that random forest is outpreformed than logistic regression. 
 
 ## Consolidations:
-1. Do pairwise correlation before selecting attributes, avoiding effect of correlations
+1. Do pairwise correlation before selecting attributes, avoiding effect of correlations and keeping independent features.
 2. Apply grid search or randomized search to find out best hyperparameter sets, boosting accuracy.
 3. Since modeling is time-consuming with all attributes, feature selection (i.e. select k best) could also be applied to boost time effectiveness. 
 4. Two raw models both failed to predict TP in confusion matrices, which is still a unknown answer.
